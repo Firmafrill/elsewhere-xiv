@@ -1,0 +1,319 @@
+{
+  "items": [
+    
+    
+   {
+      "id": "mooncatkeeper-body-compendium",
+      "title": "The Body Mod Compendium",
+      "creator": "MooncatKeeper",
+      "creatorUrl": "https://www.xivmodarchive.com/modid/129592",
+      "level": "N/A",
+      "summary": "A massive, frequently updated reference document compiling every publicly available body mod and body edit for FFXIV, including base bodies, derivatives, terminology, and compatibility notes across Dawntrail-era tools.",
+      "type": ["Doc"],
+      "versions": ["7.x"],
+      "programs": [],
+      "categories": ["Compendiums", "Bodies"],
+      "tags": ["Compendiums", "Bodies"],
+      
+      "extras": [],
+
+      "href": "https://docs.google.com/document/d/1N_EZiNh6nnB-vGcufVnsnIJXv5zmh4p_4EOkzPsIFEE",
+      "archiveHref": "",
+      "localPath": "content/mooncatkeeper-body-compendium/mooncatkeeper-body-compendium.md",
+      "archiveOnly": false,
+      "updated": "2025-11-16"
+    },
+    {
+      "id": "firma-local-demo",
+      "title": "On-Site Guide Demo",
+      "creator": "FirmaFrill",
+      "creatorUrl": "https://ko-fi.com/firmafrill",
+      "level": "N/A",
+      "summary": "Internal test guide to demonstrate the localPath feature. do not include this block in the forming of future guide cards.",
+      "type": "Doc",
+      "versions": ["7.x"],
+      "programs": [],
+      "categories": ["Misc"],
+      "tags": ["Demo", "Internal"],
+
+      "extras": [
+        {
+        "label": "Original Google Doc",
+        "href": "https://docs.google.com/..."
+        },
+        {
+        "label": "Video walkthrough",
+        "href": "https://youtube.com/..."
+        }
+      ],
+
+      "href": "",
+      "archiveHref": "",
+      "archiveOnly": false,
+      "localPath": "content/firma-local-demo/firma-local-demo.md",
+      "updated": "2025-11-13"
+},
+{
+  "id": "fantosme-body-compendium",
+  "title": "The Body Mod Compendium",
+  "creator": "Fantosme",
+  "creatorUrl": "",
+  "level": "N/A",
+  "summary": "A detailed, frequently updated spreadsheet cataloguing body mods, add-ons, discontinued and deleted files, race-specific assets, and related resources for FFXIV, including both public and archived options.",
+  "type": "Spreadsheet",
+  "versions": ["7.x"],
+  "programs": [],
+  "categories": ["Compendiums", "Bodies"],
+  "tags": ["Compendiums", "Bodies"],
+
+  "extras": [],
+
+  "href": "https://docs.google.com/spreadsheets/d/1JwqWGLDtpFqaFBDD8IIJSMmHymGtJhzKdPRF1az8oGQ",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-01-14"
+},
+{
+  "id": "xivneon-na-studios",
+  "title": "NA Gpose Studios",
+  "creator": "ForgivenRevelry & XIVNeon",
+  "creatorUrl": "https://bsky.app/profile/xivneon.bsky.social/post/3l7iyqio4x52h",
+  "level": "N/A",
+  "summary": "A comprehensive directory of NA gpose studios and themed housings, organized by server, ward, plot, and theme. Originally created by ForgivenRevelry and now maintained by XivNeon, this reference document helps players easily locate gpose-friendly spaces across the data centers.",
+  "type": "Spreadsheet",
+  "versions": ["7.x"],
+  "programs": [],
+  "categories": ["Compendiums", "Gpose"],
+  "tags": ["Compendiums", "Gpose"],
+
+  "extras": [],
+
+  "href": "https://docs.google.com/spreadsheets/d/1Xo7UT8mu0U-PFMa8HfS8vJSzDkqHE3HODoxiu8dmReo/",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-06-14"
+},
+{
+  "id": "majorpraline-eu-studios",
+  "title": "EU Gpose Studios",
+  "creator": "Major Praline",
+  "creatorUrl": "https://www.xivmodarchive.com/user/230603",
+  "level": "N/A",
+  "summary": "A directory of EU gpose studios and themed housings organized by server, district, ward, plot, and theme, helping players easily locate gpose-friendly spaces across the European data centers.",
+  "type": "Spreadsheet",
+  "versions": ["7.x"],
+  "programs": [],
+  "categories": ["Compendiums", "Gpose"],
+  "tags": ["Compendiums", "Gpose", "Studio"],
+
+  "extras": [],
+
+  "href": "https://docs.google.com/spreadsheets/d/1wyiE_76ewot6L-G0w7-mY_QOTI0gZ4t-vuybzlxvmVE",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-10-17"
+},
+{
+  "id": "scherana-playlist",
+  "title": "Scherana's video guides",
+  "creator": "Scherana",
+  "creatorUrl": "https://www.xivmodarchive.com/user/526425",
+  "level": "N/A",
+  "summary": "A curated playlist of Scherana's modding tutorial videos, updated directly by the creator. If you’re looking for a guide that hasn’t yet been added to Elsewhere, this playlist is the most complete source.",
+  "type": "Video",
+  "versions": ["7.x"],
+  "programs": [],
+  "categories": ["Compendiums"],
+  "tags": ["Compendiums", "Playlists"],
+
+  "extras": [],
+
+  "href": "https://www.youtube.com/playlist?list=PLQRsz8WQXmL-FaumJ4OmXkTVktVe_5MFm",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-11-20"
+},
+{
+  "id": "koneko-creator-directory",
+  "title": "FFXIV Creator Listings",
+  "creator": "Koneko",
+  "creatorUrl": "https://www.xivmodarchive.com/user/5274",
+  "level": "N/A",
+  "summary": "A reference directory of FFXIV creators and their social links, including modders, pose makers, shader creators, and other contributors. Maintained by Koneko and periodically updated.",
+  "type": "Spreadsheet",
+  "versions": ["7.x"],
+  "programs": [],
+  "categories": ["Compendiums"],
+  "tags": ["Compendiums"],
+
+  "extras": [],
+
+  "href": "https://docs.google.com/spreadsheets/d/1J6fLjXDtY-S1zWnZoUstUSJpZ2HMkJUlbzrGzrsBZ_0",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-11-20"
+},
+{
+  "id": "mond-3d-texture-terminology",
+  "title": "3D and Texture Terminology and Programs",
+  "creator": "Mond",
+  "creatorUrl": "https://twitter.com/mond_lis",
+  "level": "Beginner",
+  "summary": "A foundational guide explaining 3D terminology, texture concepts, and commonly used programs in FFXIV modding, including updated Dawntrail-era terminology such as mask workflows and spec/gloss behavior.",
+  "type": "Doc",
+  "versions": ["7.x"],
+  "programs": [],
+  "categories": ["Compendiums"],
+  "tags": ["Compendiums", "Terminology", "3D", "Textures"],
+
+  "extras": [],
+
+  "href": "https://docs.google.com/document/d/1-w-xs2WKtTpXR-DgoqWW0yZN_u61SI1jHBph2vn6kKQ",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-11-20"
+},
+{
+  "id": "zatori-animation-guide",
+  "title": "Animation Guide",
+  "creator": "Zatori",
+  "creatorUrl": "",
+  "level": "N/A",
+  "summary": "A guide site exploring animation, VFX and SFX, and FF14-specific workflows using tools like XAT and VFX Editor.",
+  "type": "Site",
+  "versions": [],
+  "programs": ["XAT", "VFX Editor"],
+  "categories": ["Compendiums", "Animation", "Site"],
+  "tags": ["Compendiums", "Animation", "Site", "VFX", "SFX", "XAT", "VFX Editor"],
+
+  "extras": [],
+
+  "href": "https://animation-guide.carrd.co/",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-11-20"
+},
+{
+  "id": "eme-sculpt-porting",
+  "title": "Porting Sculpts for 7.0",
+  "creator": "Eme",
+  "creatorUrl": "https://twitter.com/emerri__",
+  "level": "Advanced",
+  "summary": "A detailed guide on updating 6.x sculpts to be compatible with the 7.0 graphical update, covering updated UVs, weights, bones, textures, and methods for transferring or rebuilding sculpts for Dawntrail. While built using the 7.0 Benchmark, the techniques can still be used in later 7.x patches.",
+  "type": "Doc",
+  "versions": ["7.x"],
+  "programs": ["Blender", "TexTools"],
+  "categories": ["Face & Head"],
+  "tags": ["Sculpting", "Face & Head", "Weighting", "UVs", "Face Porting"],
+
+  "extras": [],
+
+  "href": "https://docs.google.com/document/d/1kncbanLCs-y9AH5HTM0s8ouFc6J31YOMoaqbO7Oea6Q",
+  "archiveHref": "https://docs.google.com/document/d/1WwtLlMBiyKdtNLt6b6dg4A_7lWcrjehbrEphOmfyez4",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2024-06-24"
+},
+{
+  "id": "sosick-sculpt-porting",
+  "title": "Sculpt Transfer Guide",
+  "creator": "Sosick",
+  "creatorUrl": "https://sosickmods.carrd.co/#links",
+  "level": "Advanced",
+  "summary": "A two-part series by Sosick demonstrating how to convert 6.x sculpts for compatibility with 7.0’s updated head meshes, UVs, and lighting behavior. Created using the 7.0 benchmark, so some minor variances compared to full release may occur, but the workflow remains accurate for Dawntrail.",
+  "type": "Video",
+  "versions": ["7.x"],
+  "programs": ["Blender", "TexTools"],
+  "categories": ["Face & Head"],
+  "tags": ["Sculpting", "Face & Head", "Weighting", "UVs", "Face Porting"],
+
+  "extras": [
+    {
+      "label": "Part 1",
+      "href": "https://www.youtube.com/watch?v=2Npnf_vP-ZQ"
+    },
+    {
+      "label": "Part 2",
+      "href": "https://www.youtube.com/watch?v=Rqrt-SPg29M"
+    }
+  ],
+
+  "href": "https://www.youtube.com/playlist?list=PLRuOnaunAjGGX-E5TuHuLZvewvaVU1Pda",
+  "archiveHref": "https://drive.google.com/drive/u/0/folders/1K-XPblfr1UOTUCUYUhVpGepLi_QZ5vdF",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-11-21"
+},
+{
+  "id": "quiteromantic-sculpt-salvaging",
+  "title": "6.0 Face Sculpt Salvaging",
+  "creator": "QuiteRomantic",
+  "creatorUrl": "https://xivmodarchive.com/user/155716",
+  "level": "Advanced",
+  "summary": "A detailed guide by QuiteRomantic on salvaging 6.x face sculpts for compatibility with 7.0. This method molds the Dawntrail vanilla face onto the old sculpt using a shrinkwrap workflow to preserve the original look while updating it for new UVs, lighting, teeth, and material behavior. Includes extensive troubleshooting notes and a video version for beginners.",
+  "type": "Doc",
+  "versions": ["7.x"],
+  "programs": ["Blender", "TexTools"],
+  "categories": ["Face & Head"],
+  "tags": ["Sculpting", "Face & Head", "Weighting", "UVs", "Face Porting"],
+
+  "extras": [
+    {
+      "label": "Video Version",
+      "href": "https://youtu.be/JWjoxU2wADk"
+    }
+  ],
+
+  "href": "https://docs.google.com/document/d/13ew8NljgpRmWmEgXsZyFWa0IwgeRxTbNeA5an0xZuKE",
+  "archiveHref": "https://docs.google.com/document/d/1qBxSenLeEI02NWRDJ9z6qRA7FtgEktG7eR-4qChAYTo",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-11-21"
+},
+{
+  "id": "elsewhere-community-knowledge",
+  "title": "Elsewhere Community Knowledge Compendium",
+  "creator": "Elsewhere Community",
+  "creatorUrl": "",
+  "level": "N/A",
+  "summary": "A collaborative reference document created by the Elsewhere community, collecting tips, fixes, workflows, and troubleshooting notes for a wide range of FFXIV modding tools and techniques.",
+  "type": "Doc",
+  "versions": ["7.x"],
+  "programs": ["Blender", "Penumbra", "TexTools", "Photoshop"],
+  "categories": ["Compendiums"],
+  "tags": ["Compendiums", "Reference", "Tips", "General Modding", "Blender", "Textures", "Materials", "Penumbra", "Normals", "Troubleshooting"],
+  
+  "extras": [],
+
+  "href": "https://docs.google.com/document/d/1O1zfkSNLjxKJsutKyUMrSASspLl58c-5cf7GN_KqOik",
+  "archiveHref": "",
+  "archiveOnly": false,
+  "localPath": "",
+  "updated": "2025-11-21"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}
+

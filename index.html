@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elsewhere XIV - Guides & Resources</title>
+  <meta name="description" content="FFXIV modding guides and resources" />
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oxygen:wght@300;400;700&family=Overpass+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <div class="hero" role="banner">
+        <div class="brand">
+          <img class="brand-avatar" src="assets/images/icons/site-icon.png" alt="Site icon" />
+          <div>
+            <h1>Elsewhere XIV</h1>
+            <small>FFXIV modding guides and resources</small>
+          </div>
+        </div>
+        <nav aria-label="Primary">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<section aria-label="Featured images">
+  <div id="gallery" class="gallery" role="region"></div>
+</section>
+
+
+<div id="toolbar">
+  <div class="wrap">
+    <div class="controls" role="search">
+        <div class="controls-row">
+          <input id="searchInput" type="search" placeholder="Search guides, creators, tags" aria-label="Search" />
+        </div>
+        <div class="controls-row" id="categoryRow" aria-label="Filter by category" role="group"></div>
+        <div class="controls-row" id="subRow" aria-label="Subfilters" role="group" style="display:none"></div>
+        <div class="controls-row" id="sortRow">
+          <span class="sort-label">Sort by</span>
+          <select id="sortSelect">
+            <option value="date-desc" selected>Newest first</option>
+            <option value="date-asc">Oldest first</option>
+            <option value="title-az">Title A→Z</option>
+            <option value="title-za">Title Z→A</option>
+          </select>
+          <a href="#" id="advancedLink" class="adv-link" style="margin-left:12px">Advanced search…</a>
+          <button id="clearAll" class="chip chip--action" style="margin-left:auto">Clear</button>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+  
+  <main class="wrap" id="results" aria-live="polite">
+    <section class="grid" id="grid"></section>
+  </main>
+
+  <footer class="wrap">
+    <p>Built as a static site.</p>
+  </footer>
+  
+  <dialog id="viewer">
+    <div class="modal-head">
+      <strong id="viewerTitle">Viewer</strong>
+      <button class="close" id="viewerClose" type="button">Close</button>
+    </div>
+    <div class="modal-body">
+      <div class="iframe-wrap">
+        <iframe id="viewerFrame" title="Document viewer" width="100%" height="100%" loading="lazy" allow="autoplay; fullscreen" referrerpolicy="no-referrer"></iframe>
+      </div>
+    </div>
+  </dialog>
+
+  <dialog id="advDialog" aria-labelledby="advTitle">
+    <div class="modal-head">
+      <strong id="advTitle">Advanced search</strong>
+      <button class="close" id="advClose" type="button">Close</button>
+    </div>
+    <div class="modal-body" style="padding:16px; display:block">
+      <form id="advForm">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-bottom:12px">
+          <label for="advCreator">Creator
+            <input
+              id="advCreator"
+              type="text"
+              placeholder="e.g. Sel"
+              style="width:95%; padding:10px 12px; border-radius:12px; border:2px solid rgba(255,255,255,.18); background:var(--panel); color:var(--text)"
+            >
+          </label>
+          <label for="advType">Format
+            <select
+              id="advType"
+              style="width:100%; padding:10px 12px; border-radius:12px; border:2px solid rgba(255,255,255,.18); background:var(--panel); color:var(--text)"
+            >
+              <option value="">Any</option>
+              <option value="Video">Video</option>
+              <option value="PDF">PDF</option>
+              <option value="Spreadsheet">Spreadsheet</option>
+              <option value="Doc">Doc</option>
+              <option value="Longform">Longform</option>
+            </select>
+          </label>
+        </div>
+
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin-bottom:12px">
+          <fieldset
+            id="advVersionGroup"
+            style="border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:8px 10px; flex:0 0 auto; min-width:160px;"
+          >
+            <legend style="color:var(--muted); font-size:0.9rem;">Game version</legend>
+            <label style="margin-right:8px; font-size:0.9rem;">
+              <input type="checkbox" id="ver6" value="6.x"> 6.x
+            </label>
+            <label style="font-size:0.9rem;">
+              <input type="checkbox" id="ver7" value="7.x"> 7.x
+            </label>
+          </fieldset>
+
+          <fieldset
+            id="advSoftwareGroup"
+            style="border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:8px 10px; flex:1 1 240px; min-width:220px; position:relative;"
+>
+             <legend style="color:var(--muted); font-size:0.9rem; display:flex; align-items:center; gap:6px;">
+               Sort by Software
+                 <span
+                  class="info-icon"
+                  tabindex="0"
+                  data-tooltip="Shows only guides tagged for specific programs. You can select multiple; results will include any matching one."
+                 >?</span>
+
+              </legend>
+              <div id="advSoftwareBody">
+              </div>
+          </fieldset>
+        </div>
+
+        <fieldset
+           id="advTagsGroup"
+           style="border:1px solid rgba(255,255,255,.12); border-radius:12px; padding:8px 10px; margin-bottom:12px; max-height:230px; overflow:auto; position:relative;"
+>
+           <legend style="color:var(--muted); font-size:0.9rem; display:flex; align-items:center; gap:6px;">
+            Sort by All Tags
+            <span
+             class="info-icon"
+             tabindex="0"
+             data-tooltip="Shows anything that matches any selected tags. Best used alone: select all tags you're interested in to hide unrelated guides."
+             >?</span>
+            </legend>
+            <div id="advTagsBody">
+            </div>
+        </fieldset>
+
+        <div style="display:flex; gap:10px; justify-content:flex-end">
+          <button type="button" class="chip chip--action" id="advReset">Reset</button>
+          <button type="submit" class="chip chip--action" id="advApply">Apply</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <script src="js/layout.js"></script>
+  <script src="js/archive.js"></script>
+
+</body>
+</html>
