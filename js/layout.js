@@ -1,5 +1,5 @@
 function setupHeaderHeight(){
-  const header = document.querySelector('header');
+  const header = document.querySelector('.site-header');
   if (!header) return;
 
   function setHeaderVar(){
@@ -12,8 +12,6 @@ function setupHeaderHeight(){
   setTimeout(setHeaderVar, 100);
 }
 
-document.addEventListener('DOMContentLoaded', setupHeaderHeight);
-
 const GALLERY = [
   'assets/images/gallery/image17.jpg',
   'assets/images/gallery/image16.jpg',
@@ -21,10 +19,9 @@ const GALLERY = [
   'assets/images/gallery/image19.jpg'
 ];
 
-
-const galleryEl = document.getElementById('gallery');
-
 function initGallery(){
+  const galleryEl = document.getElementById('gallery');
+
   if (!galleryEl || !GALLERY.length) return;
 
   let i = 0;
@@ -42,10 +39,34 @@ function initGallery(){
       galleryEl.style.backgroundImage = `url('${src}')`;
       i++;
       galleryEl.style.opacity = '1';
-    }, 700); 
+    }, 700);
   }
 
   setInterval(show, 6000);
 }
 
-initGallery();
+async function loadHeader(){
+  const headerEl = document.getElementById('site-header');
+
+  if (!headerEl) return;
+
+  try {
+    const response = await fetch('components/header.html');
+
+    if (!response.ok) {
+      throw new Error(`Failed to load header: ${response.status}`);
+    }
+
+    headerEl.outerHTML = await response.text();
+
+    setupHeaderHeight();
+
+  } catch (error) {
+    console.error('Failed to load shared header:', error);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  loadHeader();
+  initGallery();
+});
